@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import "./Cards.css";
 
 function Card(props) {
@@ -13,7 +14,7 @@ function Card(props) {
         </div>
         <div className="flip-card-back" key={props.character.id}>
           <h1>{name}</h1>
-          <p>We love that guy</p>
+          <Button variant="outline-info">Info</Button>{" "}
         </div>
       </div>
     </div>
