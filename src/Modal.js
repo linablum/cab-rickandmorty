@@ -17,12 +17,12 @@ function MyModal(props) {
         <Modal.Header closeButton>
           <Modal.Title>{props.character.name}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>XXX</Modal.Body>
-        <Modal.Footer>
-          <Button variant="light" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
+        <Modal.Body>
+          <img src={props.character.image} />
+        </Modal.Body>
+        <Modal.Body>Gender: {props.character.gender}</Modal.Body>
+        <Modal.Body>Location: {props.character.location.name}</Modal.Body>
+        <Modal.Body>Species: {props.character.species}</Modal.Body>
       </Modal>
     </>
   );

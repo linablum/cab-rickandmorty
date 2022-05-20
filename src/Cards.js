@@ -17,7 +17,7 @@ function Card(props) {
           </div>
           <div className="flip-card-back" key={props.character.id}>
             <h1>{name}</h1>
-            <Modal character={props} />
+            <Modal character={props.character} />
           </div>
         </div>
       </div>
