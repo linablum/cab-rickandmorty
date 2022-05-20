@@ -1,11 +1,13 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
+import Modal from "./Modal";
+
 import "./Cards.css";
 
 function Card(props) {
   console.log(props);
   const name = props.character.name;
   const image = props.character.image;
+
   return (
     <div className="container">
       <div className="flip-card">
@@ -15,7 +17,7 @@ function Card(props) {
           </div>
           <div className="flip-card-back" key={props.character.id}>
             <h1>{name}</h1>
-            <Button variant="outline-info">More Info</Button>{" "}
+            <Modal character={props} />
           </div>
         </div>
       </div>
