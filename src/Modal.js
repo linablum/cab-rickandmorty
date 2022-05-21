@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
 function MyModal(props) {
@@ -18,7 +18,7 @@ function MyModal(props) {
           <Modal.Title>{props.character.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img src={props.character.image} />
+          <Image src={props.character.image} alt="Avatar of character" />
         </Modal.Body>
         <Modal.Body>Gender: {props.character.gender}</Modal.Body>
         <Modal.Body>Location: {props.character.location.name}</Modal.Body>

@@ -23,7 +23,6 @@ function FetchData() {
         data.map((character, i) => {
           return (
             <div key={i}>
-              {/*               <p>{character.name}</p> */}
               <Card character={character} />
             </div>
           );
